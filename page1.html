@@ -4,9 +4,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Charis+SIL:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
+<style>
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Headings */
+h1,h3{
+    font-family: "Charis SIL", serif;
+}
+
+#culture-grid{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+}
+.culture-block{
+    display: flex;
+    flex-direction: column;
+}
+.culture-block img{
+    width: 200px;
+    height: auto;
+}
+#culture-page h1{
+    text-align: center;
+}
+
+</style>
+
+<body id="culture-page">
 <header>
     <nav class="navbar">
         <div class="nav-brand">
@@ -23,51 +57,66 @@
         
     </header>
     
-    <body>
         <h1>Ethiopian Culture</h1>
         <p>Ethiopia’s culture is as vast and diverse as its landscape. Over thousands of years, several languages, traditions, cultures, and more have formed. With over 80 ethnic groups and those thousands of years of development, there is always more to learn about this amazing place, its people, and their culture. </p>
         <div id="culture-grid">
             <div class="culture-block">
-                <img src="culture-images/food.jpg">
+                <a href="culture-images/food.jpg">
+                    <img src="culture-images/food.webp"  alt="Photo of an Ethiopian meal">
+                </a>
                 <h3>Food</h3>
                 <p>Ethiopia has a wide variety of foods, but most of it is eaten on a soggy flatbread called injira. Injira is made from a grain called teff, and people put several different kinds of wet (ወጥ) on it. Wet is the Amharic word for food that is eaten on injira. There are several kinds of wet that are vegetarian, and several kinds that include meat. It is common to eat meat raw!</p>
             </div>
 
             <div class="culture-block">
-                <img src="culture-images/clothes.jpg">
+                <a href="culture-images/clothes.jpg" >
+                    <img src="culture-images/clothes.webp" alt="">
+                </a>
                 <h3>Clothing</h3>
                 <p>While the clothes vary with different tribes, they are often white with colored patterns embroidered on. Different tribes have different colors, and different patterns. Outside of the traditional shirts or suits and pants worn by men and the traditional dresses worn by women, there are also religious clothes, such as hijabs for muslim women and shammas for orthodox women.</p>
             </div>
             
             <div class="culture-block">
-                <img src="culture-images/people.JPG">
+                <a href="culture-images/people.JPG">
+                    <img src="culture-images/people.webp">
+                </a>
                 <h3>People & Tribes</h3>
                 <p>There are several tribes in Ethiopia. The main ones are Oromo, Amhara, Tigray, Somali, and Sidama, but there are also many others such as Gurage and Wolayta. These tribes all have their own languages, and their own culture, dance, food, etc. Despite all the tribes having one leader, conflict arises between tribes and government, as well as between tribes and other tribes.</p>
             </div>
             
             <div class="culture-block">
-                <img src="culture-images/history.JPG">
+                <a href="culture-images/history.JPG">
+                    <img src="culture-images/history.webp">
+                </a>
                 <h3>History</h3>
-                <p> 
-
-Ethiopia is one of the world's oldest civilizations, with a history stretching back thousands of years. It is well known for preserving its independence during the colonial era. In 1896, Ethiopia fought off Italian forces in the Battle of Adwa, sending the invaders back to their "Mamma Mias". Although Italy would later occupy Ethiopia during World War II, the occupation was short-lived, and Ethiopia regained its freedom in 1941. </p>
+                <p>
+                Ethiopia is one of the world's oldest civilizations, with a history stretching back thousands of years.
+                 It is well known for preserving its independence during the colonial era. In 1896, Ethiopia fought off 
+                 Italian forces in the Battle of Adwa, sending the invaders back to their "Mamma Mias". Although Italy would
+                  later occupy Ethiopia during World War II, the occupation was short-lived, and Ethiopia regained its freedom in 1941. 
+                </p>
             </div>
             
             <div class="culture-block">
-                <img src="culture-images/tradition.jpg">
+                <a href="culture-images/tradition.jpg">
+                    <img src="culture-images/tradition.webp">
+                </a>
                 <h3>Traditions</h3>
                 <p>Ethiopia is home to a rich variety of traditions that reflect the country's long history and diverse cultures. Hospitality is highly valued, and guests are often welcomed with food, coffee, and warm conversation. One of the most famous traditions is the Ethiopian coffee ceremony, a social gathering in which coffee beans are roasted, brewed, and shared among family and friends. Although traditions vary among Ethiopia's many ethnic groups, respect for family, community, and cultural heritage is vital to all Ethiopian cultures. </p>
             </div>
             
             <div class="culture-block">
-                <img src="culture-images/places.jpg">
+                <a href="culture-images/places.jpg">
+                    <img src="culture-images/places.webp" >
+                </a>
                 <h3>Places</h3>
                 <p>There are several notable places in Ethiopia. The capital city is Addis Ababa, though it is pronounced more like Adis Abeba. There are several places that draw tourists though, such as the rock-hewn churches in Lalibela, or the castles in Gondor. There is beauty to be found all over Ethiopia, from the small villages around Tula, to the larger cities like Addis Ababa and Gondor. </p>
             </div>
         </div>
+        
+        <footer>
+            
+        </footer>
+
     </body>
-
-    <footer>
-
-    </footer>
 </html>
