@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Noto+Sans+Ethiopic:wght@400;600;700&display=swap');
 
-/* ---------- Variables ---------- */
+
 :root {
     --color-content-bg: #F3EBDF;
     --color-bg: #F5E9D6;
@@ -15,7 +15,7 @@
     --font-amharic: 'Abyssinica SIL', 'Noto Sans Ethiopic', 'Nyala', 'Kefa', serif;
 }
 
-/* ---------- Reset & base ---------- */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -63,7 +63,7 @@ td.amharic {
     font-family: var(--font-amharic);
 }
 
-/* ---------- Header & nav ---------- */
+
 header {
     background-color: var(--color-green);
 }
@@ -109,7 +109,7 @@ header {
     border-bottom-color: var(--color-green);
 }
 
-/* ---------- Hero ---------- */
+
 .hero {
     position: relative;
     min-height: 60vh;
@@ -161,7 +161,7 @@ header {
     opacity: 0.85;
 }
 
-/* ---------- Main layout ---------- */
+
 main {
     max-width: 1100px;
     margin: 0 auto;
@@ -197,7 +197,7 @@ main {
     margin: 2rem 0;
 }
 
-/* ---------- Explore cards (home) ---------- */
+
 .explore {
     text-align: center;
     padding: 3rem 0;
@@ -266,7 +266,7 @@ main {
     border-bottom-color: currentColor;
 }
 
-/* ---------- Culture grid ---------- */
+
 #culture-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -287,7 +287,6 @@ main {
     border-radius: 0.5rem;
 }
 
-/* ---------- Language page ---------- */
 #amharictble {
     text-align: center;
     padding: 3rem 0;
@@ -342,7 +341,7 @@ tbody tr:nth-child(even) {
     border-bottom-color: var(--color-red);
 }
 
-/* ---------- Footer ---------- */
+
 footer {
     background-color: var(--color-green);
     color: var(--color-white);
@@ -367,7 +366,7 @@ footer p {
     opacity: 0.8;
 }
 
-/* ---------- Responsive ---------- */
+
 @media (max-width: 720px) {
     .navbar {
         justify-content: center;
