@@ -4,39 +4,78 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore Ethiopian culture: food, clothing, tribes, history, traditions, and places.">
-    <title>ሀበሻ | Culture</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <nav class="navbar">
-            <a href="index.html" class="nav-brand">
-                <img src="logo.png" alt="ሀበሻ logo">
-            </a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="page1.html" aria-current="page">Culture</a></li>
-                <li><a href="page2.html">Language</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <div class="page-intro">
-            <h1>Ethiopian Culture</h1>
-            <p>Ethiopia&rsquo;s culture is as vast and diverse as its landscape. Over thousands of years, several languages, traditions, cultures, and more have formed. With over 80 ethnic groups and those thousands of years of development, there is always more to learn about this amazing place, its people, and their culture.</p>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <title>Document</title>
+</head>
+<style>
+    
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Headings */
+h1,h3{
+    font-family: "Charis SIL", serif;
+}
+
+#culture-grid{
+    display: grid;
+    margin-left: 10px;
+    margin-right: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+.culture-block{
+    display: flex;
+    flex-direction: column;
+}
+.culture-block img{
+    width: 200px;
+    height: auto;
+}
+#culture-page h1{
+    text-align: center;
+}
+
+</style>
+
+<body id="culture-page">
+<header>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html">Brand</a>
         </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="page1.html">Culture</a></li>
+            <li><a href="page2.html">Language</a></li>
+        </ul>
+        </nav>
+</header>
+    
+        <h1>Ethiopian Culture</h1>
+        <p>Ethiopia’s culture is as vast and diverse as its landscape. Over thousands of years, several languages, traditions, cultures, and more have formed. With over 80 ethnic groups and those thousands of years of development, there is always more to learn about this amazing place, its people, and their culture. </p>
         <div id="culture-grid">
             <div class="culture-block">
-                <img src="culture-images/food.jpg" alt="A spread of Ethiopian food on injira flatbread">
+                <a href="culture-images/food.jpg">
+                    <img src="culture-images/food.webp"  alt="Photo of an Ethiopian meal">
+                </a>
                 <h3>Food</h3>
                 <p>Ethiopia has a wide variety of foods, but most of it is eaten on a soggy flatbread called injira. Injira is made from a grain called teff, and people put several different kinds of wet (ወጥ) on it. Wet is the Amharic word for food that is eaten on injira. There are several kinds of wet that are vegetarian, and several kinds that include meat. It is common to eat meat raw!</p>
             </div>
 
             <div class="culture-block">
-                <img src="culture-images/clothes.jpg" alt="A child wearing traditional embroidered Ethiopian clothing">
+                <a href="culture-images/clothes.jpg" >
+                    <img src="culture-images/clothes.webp" alt="">
+                </a>
                 <h3>Clothing</h3>
                 <p>While the clothes vary with different tribes, they are often white with colored patterns embroidered on. Different tribes have different colors, and different patterns. Outside of the traditional shirts or suits and pants worn by men and the traditional dresses worn by women, there are also religious clothes, such as hijabs for muslim women and shammas for orthodox women.</p>
             </div>
@@ -60,17 +99,17 @@
             </div>
 
             <div class="culture-block">
-                <img src="culture-images/places.jpg" alt="The rock-hewn church of Lalibela">
+                <a href="culture-images/places.jpg">
+                    <img src="culture-images/places.webp" >
+                </a>
                 <h3>Places</h3>
                 <p>There are several notable places in Ethiopia. The capital city is Addis Ababa, though it is pronounced more like Adis Abeba. There are several places that draw tourists though, such as the rock-hewn churches in Lalibela, or the castles in Gondor. There is beauty to be found all over Ethiopia, from the small villages around Tula, to the larger cities like Addis Ababa and Gondor.</p>
             </div>
         </div>
-    </main>
+        
+        <footer>
+            
+        </footer>
 
-    <footer>
-        <img src="other/green-pattern.jpg" alt="" class="pattern-divider">
-        <p>&copy; 2026 ሀበሻ. Start Speaking. Start Belonging.</p>
-        <img src="other/cross-icon.png" alt="" class="footer-icon">
-    </footer>
-</body>
+    </body>
 </html>
