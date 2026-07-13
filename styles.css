@@ -278,6 +278,7 @@ main {
     color: var(--color-green);
     font-size: 1.3rem;
     margin: 1rem 0 0.5rem;
+    text-align: center;
 }
 
 .culture-block img {
@@ -285,8 +286,13 @@ main {
     aspect-ratio: 4 / 3;
     object-fit: cover;
     border-radius: 0.5rem;
+    align-self: center;
 }
-
+.culture-block p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-align: center;
+}
 #amharictble {
     text-align: center;
     padding: 3rem 0;
