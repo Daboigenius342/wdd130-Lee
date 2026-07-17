@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Noto+Sans+Ethiopic:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Gelasio:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Noto+Sans+Ethiopic:wght@400;600;700&display=swap');
 
 
 :root {
@@ -209,8 +209,8 @@ main {
 }
 
 .section-divider {
-    width: 1.5rem;
-    margin: 0.75rem auto 2.5rem;
+    width: min(90%, 20rem);
+    margin: 1rem auto 2.5rem;
 }
 
 .cards {
@@ -329,6 +329,31 @@ tbody tr:nth-child(even) {
     background-color: var(--color-bg);
 }
 
+.fidel-table-wrapper {
+    overflow-x: auto;
+    margin-top: 1rem;
+}
+
+.fidel-table {
+    min-width: 640px;
+}
+
+.fidel-table th,
+.fidel-table td {
+    text-align: center;
+}
+
+.fidel-table tbody th {
+    background-color: var(--color-green);
+    color: var(--color-white);
+    font-family: var(--font-heading);
+    padding: 0.75rem 1.25rem;
+}
+
+.fidel-table td.amharic {
+    font-size: 1.4rem;
+}
+
 .page-outro {
     max-width: 70ch;
     margin: 0 auto;
@@ -387,27 +412,27 @@ footer p {
         grid-template-columns: 1fr;
     }
 
-    table, thead, tbody, th, td, tr {
+    #amharictble table, #amharictble thead, #amharictble tbody, #amharictble th, #amharictble td, #amharictble tr {
         display: block;
     }
 
-    thead {
+    #amharictble thead {
         display: none;
     }
 
-    tbody tr {
+    #amharictble tbody tr {
         margin-bottom: 1rem;
         border-radius: 0.5rem;
         overflow: hidden;
     }
 
-    tbody td {
+    #amharictble tbody td {
         display: flex;
         justify-content: space-between;
         gap: 1rem;
     }
 
-    tbody td::before {
+    #amharictble tbody td::before {
         content: attr(data-label);
         font-weight: 700;
         color: var(--color-green);
